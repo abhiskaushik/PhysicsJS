@@ -7,6 +7,19 @@ define(function (require) {
         // Initialize the activity.
         activity.setup();
 
+
+     //add click listeners onto different physics experiments
+  /*    var myButton = document.getElementById("ping-pong");
+         myButton.addEventListener('click',function(){
+             //console.log(myButton.id);
+             alert("he");
+         });
+*/
+
+
+
+
+
     });
 
 });

@@ -10,11 +10,11 @@
       href="lib/sugar-web/graphics/css/sugar-200dpi.css">
 <link rel="stylesheet" href="css/activity.css">
 <script data-main="js/loader" src="lib/require.js"></script>
-</head>
+<script src="js/jquery.js"></script>
 
 <body>
 <div id="main-toolbar" class="toolbar">
-  <button class="toolbutton" id="activity-button" title="My Activity"></button>
+  <button class="toolbutton" id="activity-button" title="Physics JS"></button>
   <button class="toolbutton" id="mass-drop" title="Mass Drop"></button>
   <button class="toolbutton" id="ping-pong" title="Ping Pong"></button>
   <button class="toolbutton" id="pendulam" title="Pendulum Experiments"></button>
@@ -33,10 +33,33 @@
 <div id="canvas">
 
   <!-- Replace this message with your own content -->
-  <h1 align="center">Learning Gravity</h1>
-  <p>Coming Soon...</p>
+  <h1 id="simulationTitle"align="center">Mass Drop Experiment </h1>
+  
 
 </div>
+<script type="text/javascript">
+
+var simulationButtons = document.getElementsByClassName("toolbutton");
+var simulationTitle=document.getElementById('simulationTitle');
+    var clickTrigrerFunction = function() {
+        var id = this.getAttribute("id");
+         var title=this.getAttribute('title');
+        //alert(id);
+        simulationTitle.innerHTML=title;
+
+    };
+
+    for(var i=0;i<simulationButtons.length;i++){
+        simulationButtons[i].addEventListener('click',clickTrigrerFunction, false);
+    }
+
+</script>
+
+
+
+</head>
+
+
 </body>
 
 </html>
