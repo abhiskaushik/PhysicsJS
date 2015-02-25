@@ -1,0 +1,30 @@
+.toolbar{
+	background-color: #0D8465;
+}
+#main-toolbar #activity-button {
+  background-image: url(../activity/activity-icon.svg);
+}
+#main-toolbar #mass-drop {
+  background-image: url(../icons/mass-drop.svg);
+}
+
+#main-toolbar #ping-pong {
+  background-image: url(../icons/ping-pong.svg);
+}
+#main-toolbar #binary-clock {
+  background-image: url(../icons/binary-clock.svg);
+}
+#main-toolbar #angry-birds {
+  background-image: url(../icons/angry-birds.svg);
+}
+#main-toolbar #pendulam {
+  background-image: url(../icons/pendulam.svg);
+}
+#main-toolbar #analogue-clock {
+  background-image: url(../icons/analogue-clock.svg);
+}
+#main-toolbar #rag-doll {
+  background-image: url(../icons/rag-doll.svg);
+}
+
+
